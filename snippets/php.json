@@ -1,0 +1,51 @@
+{
+  "Strict types declaration": {
+    "prefix": "strict",
+    "body": ["<?php", "", "declare(strict_types=1);", ""],
+    "description": "Enable strict types"
+  },
+  "Function with return type": {
+    "prefix": "fnret",
+    "body": [
+      "function ${1:methodName}(${2:Type} \${3:arg}): ${4:ReturnType}",
+      "{",
+      "    $5",
+      "}"
+    ],
+    "description": "Function with typed arguments and return type"
+  },
+  "Typed property": {
+    "prefix": "prop",
+    "body": ["public ${1:string} \${2:name};"],
+    "description": "Typed class property"
+  },
+  "Typed private property": {
+    "prefix": "propprv",
+    "body": ["private ${1:string} \${2:name};"],
+    "description": "Private typed class property"
+  },
+  "Laravel Controller Method": {
+    "prefix": "ctrlmeth",
+    "body": [
+      "public function ${1:store}(Request \$request): RedirectResponse",
+      "{",
+      "    $2",
+      "}"
+    ],
+    "description": "Laravel controller method with return type"
+  },
+  "Class with typed constructor": {
+    "prefix": "typedclass",
+    "body": [
+      "class ${1:ClassName}",
+      "{",
+      "    public function __construct(",
+      "        private ${2:ServiceType} \${3:service}",
+      "    ) {}",
+      "",
+      "    $0",
+      "}"
+    ],
+    "description": "Class with typed constructor property promotion"
+  }
+}

@@ -1,0 +1,6 @@
+vim.keymap.set("n", "<leader>gs", ":Git<CR>", { desc = "Fugitive: Git status" })
+vim.keymap.set("n", "<leader>ga", ":Git add .<CR>", { desc = "Fugitive: Git add all" })
+vim.keymap.set("n", "<leader>gc", ":Git commit<CR>", { desc = "Fugitive: Git commit" })
+vim.keymap.set("n", "<leader>gp", ":Git push<CR>", { desc = "Fugitive: Git push" })
+vim.keymap.set("n", "<leader>gl", ":Git log<CR>", { desc = "Fugitive: Git log" })
+vim.keymap.set("n", "<leader>gb", ":Git branch<CR>", { desc = "Fugitive: Git branch" })

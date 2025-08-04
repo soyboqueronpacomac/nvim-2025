@@ -1,0 +1,62 @@
+{
+  "Console log": {
+    "prefix": "clg",
+    "body": ["console.log($1);"],
+    "description": "Console log"
+  },
+  "useState Hook": {
+    "prefix": "usestate",
+    "body": [
+      "const [$1, set$2] = useState<$3>($4);"
+    ],
+    "description": "React useState hook"
+  },
+  "useEffect Hook": {
+    "prefix": "useeffect",
+    "body": [
+      "useEffect(() => {",
+      "  $1",
+      "}, [$2]);"
+    ],
+    "description": "React useEffect hook"
+  },
+  "React Functional Component": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "interface $1Props {",
+      "  ",
+      "}",
+      "",
+      "const $1: React.FC<$1Props> = (props) => {",
+      "  return (",
+      "    <div>",
+      "      $2",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default $1;"
+    ],
+    "description": "React Functional Component with TypeScript"
+  },
+  "Interface": {
+    "prefix": "interface",
+    "body": [
+      "interface $1 {",
+      "  $2: $3;",
+      "}"
+    ],
+    "description": "TypeScript interface"
+  },
+  "Type Alias": {
+    "prefix": "type",
+    "body": [
+      "type $1 = {",
+      "  $2: $3;",
+      "};"
+    ],
+    "description": "TypeScript type alias"
+  }
+}
